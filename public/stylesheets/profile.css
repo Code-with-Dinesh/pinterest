@@ -5,16 +5,31 @@ body{
     padding: 0;
 }
 #algn{
-    height: 92vh;
+    height: auto;
     min-height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background-color: red; */
 }
-
+.logout{
+    text-decoration: none;
+    background-color: yellow;
+    padding: 9px 17px;
+    border-radius: 16px;
+    color: black;
+    font-weight: 600;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: start;
+}
 #cards{
-    width: 370px;
-    height: 435px;
+    background-color: rgb(187, 158, 158);
+    width: 480px;
+    height: 500px;
     border: none;
     border-radius: 15px;
     overflow: hidden;
@@ -28,6 +43,7 @@ body{
     display: flex;
     justify-content: center;
     position: relative;
+
 }
 
 .profile-pic{
@@ -83,9 +99,18 @@ body{
 #btn{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     margin: 15px;
+    text-align: center;
+    margin-top: 5px;
 }
-
+.formdata{
+    margin-top: 7px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 #btn button{
     margin: 0 20px;
     padding: 10px 15px;
