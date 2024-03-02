@@ -17,7 +17,7 @@ router.get("/profile",isLoggedIn,async (req,res)=>{
     username: req.session.passport.user  // jab tak hum login hai tab tak session m1e username save rahta hai 
     
   }).populate("posts")
-  console.log(user)
+ // console.log(user)
   res.render("Profile",{user})
 })
 
@@ -49,7 +49,7 @@ router.post("/upload",isLoggedIn,upload.single("file"),async function(req,res){
 
 router.post("/register",function(req,res){
   let {username,email,fullName} = req.body;
-  console.log(username,email,fullName)
+ // console.log(username,email,fullName)
   let userdata = new userModel({username,email,fullName})
   userModel.register(userdata,req.body.password).then(()=>{
     passport.authenticate("local")(req,res,function(){

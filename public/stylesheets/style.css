@@ -8,6 +8,22 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   
 }
+.parent{
+  margin-top: 1px;
+  position: relative;
+}
+.templates{
+  text-decoration: none;
+  background-color: #f80511;
+  border-radius: 19px;
+  color: black;
+  padding: 7px 12px;
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  top:20px;
+  left:20px;
+}
 .error{
   font-weight: 500;
   color: red;
